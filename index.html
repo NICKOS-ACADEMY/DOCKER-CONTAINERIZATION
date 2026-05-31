@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICKOS LTD </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: white;
+            color: #2563eb;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .features {
+            padding: 60px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>NICKOS ACADEMY</h2>
+        <nav>
+            <a href="#">AWS</a>
+            <a href="#">TERRAFORM</a>
+            <a href="#">DOCKER</a>
+            <a href="#">KUBERNETES</a>
+            <a href="#">GIT & GITHUB</a>
+            <a href="#">CICD PIPELINE</a> <br>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to NICKOS ACADEMY</h1>
+        <p>Solve Solutions with our modern automation tools.</p>
+        <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>Fast</h3>
+            <p>Optimized for speed and performance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive</h3>
+            <p>Looks great on desktop, tablet, and mobile.</p>
+        </div>
+
+        <div class="card">
+            <h3>Modern</h3>
+            <p>Clean design using current web standards.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 NICKOS ACADEMY. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
