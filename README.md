@@ -29,20 +29,22 @@ docker exec -it <container-name-or-id> /bin/bash
 
 DOVKER COMMANDS
 docker images or docker image ls
+
 # List local images
 docker images
 
 # Pull an image from a registry
-docker pull nginx
+docker pull nickos-website:2.0.0
 
 # Build an image from a Dockerfile
-docker build -t myapp .
+docker build -t nickos-website:2.0.0 .
 
 # Remove an image
-docker rmi myapp
+docker rmi nickos-website:2.0.0
 
 # Tag an image
-docker tag myapp username/myapp:latest
+docker tag myapp username/myapp:latest ..... docker tag nickos-website:2.0.0 obianuju/nickos-website:2.0.0
+
 # List running containers
 docker ps
 
