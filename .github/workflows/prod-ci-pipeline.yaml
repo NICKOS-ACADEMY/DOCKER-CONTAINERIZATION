@@ -7,10 +7,10 @@ on:
       - feature/*
 
 jobs:
-  push_docker_image_to_docker_hub:
-    runs-on: ubuntu-latest
+  name: push_docker_image_to_docker_hub
+  runs-on: ubuntu-latest
 
-    steps:
+  steps:
       - name: Checkout source
         uses: actions/checkout@v4
 
