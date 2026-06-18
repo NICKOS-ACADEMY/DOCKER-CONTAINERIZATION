@@ -26,7 +26,7 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/nickos-website:2.0.1 .
 
-      - name: Tag latest
+      - name: Tag image version
         run: |
           docker tag \
             ${{ secrets.DOCKER_USERNAME }}/nickos-website:2.0.1
@@ -35,7 +35,6 @@ jobs:
       - name: Push image
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/nickos-website:2.0.1
-
           # docker push ${{ secrets.DOCKER_USERNAME }}/nickos-website:latest
 
 

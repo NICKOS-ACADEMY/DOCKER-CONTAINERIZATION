@@ -6,25 +6,25 @@ docker commands
 docker build -t nickos-website:2.0.0 .                #.......Builds the image -->
 docker run -d -p 8080:80 --name nickos nickos-website:2.0.0     #..... Runs the container on port 8080 on your browser
 
-http://localhost:8080              # ......
+http://localhost:<portNumber>              # ......
 
 
 To push a Docker image to Docker Hub, follow these steps.
 
 1. Log in to Docker Hub
 docker login then your Docker Hub username and password (or access token)
-2. Tag the image with your Docker Hub username with (docker tag <appName> <dockerhub-username>/<myAppName>:<tag>)...... docker tag nickos-website:2.0.0 obianuju/nickos-website:2.0.0 
+2. Tag the image with your Docker Hub username with (docker tag <appName> <dockerhub-username>/<myAppName>:<tag>)......   docker tag nickos-website:2.0.0 obianuju/nickos-website:2.0.0 
 3. Push the image with (docker push <dockerhub-username>/<repository>:<tag> )
 docker push obianuju/nickos-website:2.0.0
 docker push obianuju/nickos-website:latest
-4. pulls the images from Dockerhub
+4. pulls the images from Dockerhub to local machine
 docker pull obianuju/nickos-website:2.0.0
 docker pull obianuju/nickos-website:latest
 
 
 1. Opening a shell inside a running Docker container
 docker container ls
-docker exec -it <container-name-or-id> /bin/bash
+docker exec -it <container-name-or-id> /bin/sh
 
 
 DOCKER COMMANDS
