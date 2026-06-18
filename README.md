@@ -3,9 +3,9 @@ Install docker and start the docker desktop
 signup in dockerhub for uploading images
 
 docker commands 
-docker build -t nickos-website:2.0.0 .           #.......Builds the image -->
+docker build -t nickos-website:2.0.0 .                #.......Builds the image -->
 docker run -d -p 8080:80 --name nickos nickos-website:2.0.0     #..... Runs the container on port 8080 on your browser
-docker images
+
 http://localhost:8080              # ......
 
 
@@ -89,3 +89,13 @@ docker exec -it <container_id> bash
 
 # If bash isn't available
 docker exec -it <container_id> sh
+
+Sign in to Docker Hub to get the access token
+
+Go to Account Settings → Personal Access Tokens
+Generate new token
+
+In GitHub repository - settings Secrets and variables → Actions.
+Click New repository secret and Create:
+DOCKERHUB_USERNAME = your Docker Hub username
+DOCKERHUB_TOKEN = your Docker Hub access token
