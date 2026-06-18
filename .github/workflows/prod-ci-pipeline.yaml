@@ -7,8 +7,8 @@ on:
       - feature/*
 
 jobs:
-  # build-and-publish:
-    name: push docker image to docker hub
+  build-and-publish:
+    name: Build Docker Image, Run Tests, and Publish to Docker Hub
     runs-on: ubuntu-latest
 
     steps:
