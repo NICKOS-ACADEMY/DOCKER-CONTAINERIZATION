@@ -27,7 +27,7 @@ docker container ls
 docker exec -it <container-name-or-id> /bin/bash
 
 
-DOVKER COMMANDS
+DOCKER COMMANDS
 docker images or docker image ls
 
 # List local images
